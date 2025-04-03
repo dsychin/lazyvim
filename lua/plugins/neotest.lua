@@ -7,7 +7,7 @@ return {
     opts = {
       adapters = {
         "neotest-vitest",
-        "neotest-golang",
+        require("neotest-golang")({ runner = "gotestsum" }),
       },
     },
   },
